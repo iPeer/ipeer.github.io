@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="AGroupOnStage Download Counter Page"/>
+<meta name="keywords" content="iPeer,KSP,Kerbal Space Program,Kerbal,Space,Program,IFFS,In,Flight,Flag<Switch,Switcher,InFlightFlagSwitcher"/>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="./css/iPeer-KSPModDL.css"/>
+<link href='//fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<title>KSP Mod Download Counter</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="./js/iPeer-KSPModDL.min.js"></script>
+</head>
+<body>
+	<div class="page">
+
+		<div class="container">
+
+			<div class="dlInfo">
+				<span class="downloads">Getting data...</span><span class="changes" title="Number of downloads since last update">+0</span>
+			</div>
+				<span class="downloadSource github"><a class="githublink" href="#" target="_blank">GitHub</a>: </span><span class="downloadCount" id="github">0</span><span class="pipe countsep">|</span><span class="downloadSource kerbal"><a class="kerbalstufflink" href="#" target="_blank">KerbalStuff</a>: </span><span class="downloadCount" id="kerbalstuff">0</span>
+			<br /><span class="downloadDay">Today: </span><span class="downloadCount" id="today">0</span><span class="pipe">|</span><span class="downloadDay">Yesterday: </span><span class="downloadCount" id="yesterday">0</span><br />
+			<span class="updateTime">As of <span class="updateDate">??, ??:?? UTC</span>. Updates every 5 minutes. Updating in <span class="updateTimer">??:??</span>.</span>
+			<div>
+				<span class="apiData">
+					<a class="apiLink" href="#" target="_blank">API</a>
+				</span>
+				<span class="pipe">|</span>
+				<span class="apiData">
+					<span class="apiLink">Show API Data</span>
+				</span>
+			</div>
+
+			<div class="apiDataView">
+				<textarea readonly class="jsonData">Getting data...</textarea>
+			</div>
+
+			<span class="footer"></span>
+
+		</div>
+
+	</div>
+</body>
+</html>
